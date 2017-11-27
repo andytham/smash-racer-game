@@ -1,6 +1,9 @@
 
 body{
-  background-image: url('images/bg.jpg');
+  background-color: #CCCCCCC;
+  background-image: url("images/bg.jpg");
+
+
 }
 
 .spacer{
@@ -42,6 +45,24 @@ body{
   margin: 15px;
 
 }
-img{
+
+
+.playerOne{
+  position:absolute;
+  left: 25px;
+  top: 250px;
+}
+
+.playerTwo{
+  position:absolute;
+  left: 25px;
+  top: 350px;
+}
+
+.kirby{
+  width: 125px;
+}
+
+.link{
   width: 150px;
 }
