@@ -2,7 +2,7 @@
 body{
   background-color: #CCCCCCC;
   background-image: url("images/bg.jpg");
-
+  background-size:cover;
 
 }
 
@@ -59,10 +59,10 @@ body{
   top: 350px;
 }
 
-.kirby{
+.kirbyPic{
   width: 125px;
 }
 
-.link{
-  width: 150px;
+.linkPic{
+  width: 200px;
 }
