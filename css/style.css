@@ -1,17 +1,47 @@
 
+body{
+  background-image: url('images/bg.jpg');
+}
 
+.spacer{
+  margin:100px 0;
+}
 
-
-
-.start{
-  border: 3px solid black;
+.button{
+  border: 5px solid black;
   border-radius: 5px;
-  padding: 20px;
+  padding: 12px;
   font-size: 20px;
   text-align: center;
+  width: 10%;
+  margin: 0 auto;
+}
+
+#gamePage{
+  display:none;
+}
+
+
+#start{
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 20px;
+  text-align: center;
+  width: 10%;
+  margin: 0 auto;
+}
+
+#restart{
+  display:none;
 }
 
 .instructions{
   font-size: 16px;
+  text-align: center;
+  margin: 15px;
 
+}
+img{
+  width: 150px;
 }
