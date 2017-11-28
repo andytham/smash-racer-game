@@ -12,38 +12,38 @@ body{
   border: 5px solid black;
   border-radius: 5px;
   padding: 12px;
-  font-size: 100%;
+  font-size: 2vw;
   text-align: center;
-  width: 10%;
+  width: 300px;
   margin: 0 auto;
+  position:fixed;
+  top: 22%;
+  left: 41.5%;
+  background-color: #CCCCCC;
 }
 
 #gamePage{
   display:block;
-  position:absolute;
 }
 #landingPage{
-  position:absolute;
 }
 
 #start{
-  border: 5px solid black;
-  border-radius: 5px;
-  padding: 12px;
-  text-align: center;
-  width: 10%;
-  margin: 0 auto;
+  display:block;
 }
 
 #restart{
   display:none;
-  right: 10%;
 }
 
 .instructions{
-  font-size: 16px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 3vw;
   text-align: center;
   margin: 15px;
+  position: fixed;
+  top: 0;
+  left: 38%;
 
 }
 
@@ -58,14 +58,14 @@ body{
   left: 0;
   width:100%;
 }
-.linkPic{
+#link{
   position: fixed;
   left:-3%;
-  bottom: 12%;
+  bottom: 25%;
   width: 22%;
   size:cover;
 }
-.kirbyPic{
+#kirby{
   position:fixed;
   left:-3%;
     bottom: 0%;
