@@ -6,3 +6,12 @@ button.addEventListener("click", function(){
   document.getElementById("restart").style.display = "block";
   }
 );
+
+let button2 = document.getElementById("restart");
+button2.addEventListener("click", function(){
+  document.getElementById("gamePage").style.display = "none";
+  document.getElementById("landingPage").style.display = "block";
+
+  document.getElementById("restart").style.display = "none";
+  }
+);

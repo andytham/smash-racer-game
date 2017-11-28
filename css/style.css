@@ -1,14 +1,15 @@
 
-body{
-  background-color: #CCCCCCC;
-  background-image: url("images/bg.jpg");
-  background-size:cover;
+.bg{
 
+  background: url('../images/bg.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 800px;
+  height: 800px;
+  position: absolute;
 }
 
-.spacer{
-  margin:100px 0;
-}
 
 .button{
   border: 5px solid black;
@@ -49,14 +50,14 @@ body{
 
 .playerOne{
   position:absolute;
-  left: 25px;
-  top: 250px;
+  left: 5%;
+  top: 45%
 }
 
 .playerTwo{
   position:absolute;
-  left: 25px;
-  top: 350px;
+  left: 5%;
+  top: 55%;
 }
 
 .kirbyPic{
