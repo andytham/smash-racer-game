@@ -15,3 +15,6 @@ button2.addEventListener("click", function(){
   document.getElementById("restart").style.display = "none";
   }
 );
+
+// const playerOne = document.get elementById('playerOne');
+// console.log(playerOne.style.left = "100px");

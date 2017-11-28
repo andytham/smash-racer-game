@@ -1,13 +1,10 @@
 
-.bg{
-
+body{
   background: url('../images/bg.jpg');
-
   background-repeat: no-repeat;
-  background-position: center;
-  width: 800px;
-  height: 800px;
-  position: absolute;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
@@ -15,22 +12,24 @@
   border: 5px solid black;
   border-radius: 5px;
   padding: 12px;
-  font-size: 20px;
+  font-size: 100%;
   text-align: center;
   width: 10%;
   margin: 0 auto;
 }
 
 #gamePage{
-  display:none;
+  display:block;
+  position:absolute;
 }
-
+#landingPage{
+  position:absolute;
+}
 
 #start{
   border: 5px solid black;
   border-radius: 5px;
   padding: 12px;
-  font-size: 20px;
   text-align: center;
   width: 10%;
   margin: 0 auto;
@@ -38,6 +37,7 @@
 
 #restart{
   display:none;
+  right: 10%;
 }
 
 .instructions{
@@ -49,21 +49,25 @@
 
 
 .playerOne{
-  position:absolute;
-  left: 5%;
-  top: 45%
+  left: 0;
+
+  width:100%;
 }
 
 .playerTwo{
-  position:absolute;
-  left: 5%;
-  top: 55%;
+  left: 0;
+  width:100%;
 }
-
-.kirbyPic{
-  width: 125px;
-}
-
 .linkPic{
-  width: 200px;
+  position: fixed;
+  left:-3%;
+  bottom: 12%;
+  width: 22%;
+  size:cover;
+}
+.kirbyPic{
+  position:fixed;
+  left:-3%;
+    bottom: 0%;
+  width: 18%;
 }
