@@ -76,7 +76,7 @@ body{
   font-family: 'Shadows Into Light', cursive;
   position:fixed;
   left: 44%;
-  top: 51%;
+  top: 31%;
   display:none;
   font-size: 50px;
   font-weight: 400;
@@ -84,9 +84,13 @@ body{
 #linkWin{
   font-family: 'Shadows Into Light', cursive;
   position:fixed;
-  left: 44%;
-  top: 51%;
+  left: 38%;
+  top: 31%;
   display:none;
   font-size: 50px;
   font-weight: 400;
+  text-align: center;
+}
+.win{
+  float:left;
 }
