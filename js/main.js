@@ -1,14 +1,21 @@
+//standing aniamtion
 let runAnim = 0;
+//makes sure no one cheats before starting
+let startCheck = 0;
+
+//start button to initialize game page
 let button = document.getElementById("start");
 button.addEventListener("click", function(){
   document.getElementById("gamePage").style.display = "block";
   document.getElementById("landingPage").style.display = "none";
 
   document.getElementById("restart").style.display = "block";
+  startCheck = 1;
   }
 
 );
 
+//resets to landing page and resets game page back to initial values
 let button2 = document.getElementById("restart");
 button2.addEventListener("click", function(){
   document.getElementById("gamePage").style.display = "none";
@@ -19,17 +26,21 @@ button2.addEventListener("click", function(){
   moveVarTwo = 0;
   kirby.style.left = 0;
   standingLink();
+  standingKirby();
   runAnim = 0;
   document.getElementById("kirbyWin").style.display = "none";
   document.getElementById("linkWin").style.display = "none";
+  startCheck = 0;
   }
 );
+
 
 let link = document.getElementById("link");
 let kirby = document.getElementById("kirby");
 let moveVarOne = 0;
 let moveVarTwo = 0;
 
+//running and standing animations
 function runningLink(){
   link.src = "images/link_1.gif";
   link.style.left = "2%";
@@ -55,7 +66,12 @@ function standingKirby(){
   kirby.style.bottom= "11%";
 }
 
+// the whole game function, checks for standing animation and changes it, then moves the players
+
 function movePlayers(event) {
+  if( startCheck == 0){
+    return;
+  }
   if (runAnim == 0) {
     runningKirby();
     runningLink();
@@ -71,20 +87,18 @@ function movePlayers(event) {
       return;
 
     }
-
+  //checks if z is pressed
   if(event.keyCode == 90){
 
     moveVarOne = moveVarOne + 2;
     link.style.left = moveVarOne + "%";
   }
+  //checks if right arrow is pressed
   if(event.keyCode == 39){
     moveVarTwo = moveVarTwo + 2;
     kirby.style.left = moveVarTwo + "%";
   }
-  if(moveVarOne > 80 || moveVarTwo > 80){
-    console.log('win');
-  }
 }
 
-
+//checks for player input
 document.addEventListener("keydown", movePlayers);
