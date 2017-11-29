@@ -87,7 +87,10 @@ function movePlayers(event) {
     runAnim = 1;
   }
   if(moveVarOne > 83 || moveVarTwo > 80){
+    //stops infinite wins by accident
+    //increase win counter
       if(moveVarOne > 83){
+
         if(winCondition == 0){
           linkWinCount = linkWinCount + 1;
         }
