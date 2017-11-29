@@ -77,21 +77,27 @@ body{
   font-family: 'Shadows Into Light', cursive;
   position:fixed;
   left: 44%;
-  top: 31%;
+  top: 33%;
   display:none;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 400;
+  
 }
 #linkWin{
   font-family: 'Shadows Into Light', cursive;
   position:fixed;
   left: 38%;
-  top: 31%;
+  top: 33%;
   display:none;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 400;
   text-align: center;
+  line-height: 80%;
 }
 .win{
   float:left;
+}
+.winnerText{
+  font-size: 50px;
+  font-weight:bolder;
 }
