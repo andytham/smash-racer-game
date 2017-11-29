@@ -9,6 +9,7 @@ body{
 
 
 .button{
+  font-family: 'Amatic SC', cursive;
   border: 5px solid black;
   border-radius: 5px;
   padding: 12px;
@@ -19,7 +20,8 @@ body{
   position:fixed;
   top: 22%;
   left: 41.5%;
-  background-color: #CCCCCC;
+  background-color: rgba(62,104,68,.8);
+
 }
 
 #gamePage{
@@ -34,6 +36,7 @@ body{
 
 #restart{
   display:none;
+  background-color: rgba(255,104,68,.8);
 }
 
 .instructions{
@@ -43,10 +46,8 @@ body{
   margin: 15px;
   position: fixed;
   top: 0;
-  left: 38%;
-
+  left: 43%;
 }
-
 
 .playerOne{
   left: 0;
@@ -60,14 +61,32 @@ body{
 }
 #link{
   position: fixed;
-  left:-3%;
+  left: 2%;
   bottom: 25%;
-  width: 22%;
-  size:cover;
+  width: 14%;
 }
 #kirby{
   position:fixed;
-  left:-3%;
-    bottom: 0%;
-  width: 18%;
+  left:3%;
+  bottom: 11%;
+  width: 10%;
+}
+
+#kirbyWin{
+  font-family: 'Shadows Into Light', cursive;
+  position:fixed;
+  left: 44%;
+  top: 51%;
+  display:none;
+  font-size: 50px;
+  font-weight: 400;
+}
+#linkWin{
+  font-family: 'Shadows Into Light', cursive;
+  position:fixed;
+  left: 44%;
+  top: 51%;
+  display:none;
+  font-size: 50px;
+  font-weight: 400;
 }
