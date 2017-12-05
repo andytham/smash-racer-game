@@ -1,3 +1,5 @@
+$(document).ready(() => {
+
 //standing aniamtion
 let runAnim = 0;
 //makes sure no one cheats before starting
@@ -99,7 +101,6 @@ function movePlayers(event) {
         document.getElementsByClassName('kirbyCount')[0].innerHTML = kirbyWinCount;
         document.getElementById("linkWin").style.display = "block";
         winCondition = 1;
-
       }
       if(moveVarTwo > 80){
         if(winCondition == 0){
@@ -128,3 +129,5 @@ function movePlayers(event) {
 
 //checks for player input
 document.addEventListener("keydown", movePlayers);
+
+}); //end
