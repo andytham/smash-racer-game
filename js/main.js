@@ -4,7 +4,6 @@ $(document).ready(() => {
 let runAnim = 0;
 //makes sure no one cheats before starting
 let startCheck = 0;
-
 let winCondition = 0;
 let kirbyWinCount = 0;
 let linkWinCount = 0;
